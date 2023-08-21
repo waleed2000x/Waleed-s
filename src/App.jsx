@@ -1,8 +1,12 @@
+import Appbar from "./components/Appbar/Appbar";
+import BackgroundLottie from "./components/BackgroundLottie/BackgroundLottieImg";
+
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <div className="parent">
+      <Appbar />
+      <BackgroundLottie />
+    </div>
   );
 }
 
