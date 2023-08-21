@@ -1,5 +1,5 @@
 import React from "react";
-import Widescreen from "./WIdescreen";
+import Widescreen from "./Widescreen";
 
 export default function Appbar() {
   return (
