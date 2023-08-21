@@ -6,12 +6,10 @@ export default function BackgroundLottieImg() {
   const [showLottie, setShowLottie] = useState(false);
 
   useEffect(() => {
-    // Delay showing the Lottie animation after 5 seconds
     const timer = setTimeout(() => {
       setShowLottie(true);
-    }, 5000);
+    }, 3000);
 
-    // Clear the timer if the component unmounts
     return () => clearTimeout(timer);
   }, []);
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Element } from "react-scroll";
 export default function Widescreen() {
   return (
@@ -13,6 +12,9 @@ export default function Widescreen() {
         </Link>
         <Link to="resume" smooth={true}>
           Resume
+        </Link>
+        <Link to="contact" smooth={true}>
+          Contact
         </Link>
       </div>
     </div>

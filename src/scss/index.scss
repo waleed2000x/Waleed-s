@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Kanit:ital,wght@0,400;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
 * {
-  //   font-family: "Amatic SC", cursive;
   font-family: "Caveat", cursive;
-  // font-family: "Instrument Serif", serif;
-  // font-family: "Kanit", sans-serif;
-  // font-family: "Poppins", sans-serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 .parent {
   display: flex;
   flex-direction: column;
@@ -18,64 +16,109 @@
   background-color: black;
   color: white;
   z-index: 1;
-  .backgroundLottie {
-    position: fixed;
-    width: 70%;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+}
+
+.backgroundLottie {
+  position: fixed;
+  width: 70%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.wideAppbarParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 3px;
   }
-  .wideAppbarParent {
+}
+
+.appbarItems {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+
+  a {
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+.homeParent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .homeLottiesParent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Keyframes definition */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation to specific elements */
+  .leftLotties .computerLotties,
+  .leftLotties .tabletLotties,
+  .rightLotties .reactLotties {
+    opacity: 0;
+    animation: fadeUp 1s ease 1s forwards;
+  }
+
+  /* Common styles for leftLotties and tabletLotties */
+  .leftLotties {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    height: 100px;
-    & h1 {
-      font-size: 50px;
-      font-weight: 800;
-    }
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
   }
-  .appbarItems {
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-    & a {
-      font-size: 30px;
-      cursor: pointer;
-    }
-  }
-  .homeParent {
-    display: flex;
-    width: 100%;
-    height: 130vh;
-    .leftLotties {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 100%;
-      width: 20%;
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
 
-      .computerLotties {
-        opacity: 0;
-        animation: fadeUp 1s ease 1s forwards;
-      }
-      .tabletLotties {
-        margin-top: 100px;
-        opacity: 0;
-        animation: fadeUp 1s ease 1s forwards;
-      }
+  .tabletLotties {
+    margin-top: 100px;
+  }
+
+  .reactLotties {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 200px 0px;
+    & h1 {
+      margin-top: 100px;
+      font-size: 50px;
+      font-weight: 600;
+      letter-spacing: 5px;
+    }
+    & p {
+      margin-bottom: 100px;
+      margin-top: 50px;
+      width: 60%;
+      font-size: 30px;
     }
   }
 }
