@@ -2,26 +2,80 @@
 * {
   //   font-family: "Amatic SC", cursive;
   font-family: "Caveat", cursive;
-  //   font-family: "Instrument Serif", serif;
-  //   font-family: "Kanit", sans-serif;
-  //   font-family: "Poppins", sans-serif;
+  // font-family: "Instrument Serif", serif;
+  // font-family: "Kanit", sans-serif;
+  // font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
 }
 .parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
-  //   background-color: #faf8f0;
   color: white;
-  z-index: 2;
+  z-index: 1;
   .backgroundLottie {
+    position: fixed;
     width: 70%;
     top: 60%;
     left: 50%;
-    position: fixed;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: -1;
+  }
+  .wideAppbarParent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100px;
+    & h1 {
+      font-size: 50px;
+      font-weight: 800;
+    }
+  }
+  .appbarItems {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    & a {
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+  .homeParent {
+    display: flex;
+    width: 100%;
+    height: 130vh;
+    .leftLotties {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      width: 20%;
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .computerLotties {
+        opacity: 0;
+        animation: fadeUp 1s ease 1s forwards;
+      }
+      .tabletLotties {
+        margin-top: 100px;
+        opacity: 0;
+        animation: fadeUp 1s ease 1s forwards;
+      }
+    }
   }
 }

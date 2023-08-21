@@ -6,18 +6,72 @@
 }
 
 .parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 .parent .backgroundLottie {
+  position: fixed;
   width: 70%;
   top: 60%;
   left: 50%;
-  position: fixed;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: -1;
+}
+.parent .wideAppbarParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100px;
+}
+.parent .wideAppbarParent h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.parent .appbarItems {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.parent .appbarItems a {
+  font-size: 30px;
+  cursor: pointer;
+}
+.parent .homeParent {
+  display: flex;
+  width: 100%;
+  height: 130vh;
+}
+.parent .homeParent .leftLotties {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.parent .homeParent .leftLotties .computerLotties {
+  opacity: 0;
+  animation: fadeUp 1s ease 1s forwards;
+}
+.parent .homeParent .leftLotties .tabletLotties {
+  margin-top: 100px;
+  opacity: 0;
+  animation: fadeUp 1s ease 1s forwards;
 }/*# sourceMappingURL=index.css.map */
