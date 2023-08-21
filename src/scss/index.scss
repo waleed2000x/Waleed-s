@@ -14,8 +14,8 @@
   align-items: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background-color: black;
+  // background-color: white;
   color: white;
   z-index: 1;
 }
@@ -89,7 +89,7 @@
 .homeParent {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
 }
 
 /* Lotties in Home Section */
@@ -114,7 +114,8 @@
 /* Apply animation to specific elements */
 .leftLotties .computerLotties,
 .leftLotties .tabletLotties,
-.rightLotties .reactLotties {
+.rightLotties .reactLotties,
+.aboutMeLottie {
   opacity: 0;
   animation: fadeUp 1s ease 1s forwards;
 }
@@ -124,7 +125,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
+  min-height: 90vh;
   width: 20%;
 }
 .computerLotties {
@@ -133,7 +135,7 @@
   }
 }
 .tabletLotties {
-  margin-top: 100px;
+  margin-bottom: 30px;
 }
 .aboutNavigator {
   & h1 {
@@ -143,28 +145,33 @@
 .rightLotties {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 20%;
 }
 .aboutMeLottie {
   display: flex;
   flex-direction: column;
   align-items: center;
-  & h2 {
+  & p {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
   }
-  & svg {
-    padding: 0px 5px;
-    color: red;
-    font-size: larger;
+  & h6 {
+    font-size: 20px;
+    & svg {
+      padding: 0px 5px;
+      color: red;
+      font-size: larger;
+    }
   }
 }
 .reactLotties {
   display: flex;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 /* About Me Section */
@@ -225,6 +232,9 @@
   .leftLotties {
     width: 30%;
   }
+  .rightLotties {
+    width: 30%;
+  }
   .appbarItems {
     width: 50%;
   }
@@ -246,6 +256,9 @@
   .appbarItems {
     width: 50%;
   }
+  .aboutMeLottie p {
+    font-size: 15px;
+  }
   .tabletLotties {
     margin-top: 200px;
   }
@@ -257,8 +270,21 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .leftLotties {
+    min-height: 70vh;
+  }
   .tabletLotties {
     margin-top: 250px;
+  }
+  .aboutMeLottie p {
+    display: none;
+  }
+  .aboutMeLottie h6 {
+    display: flex;
+    margin-left: 30px;
+    & svg {
+      display: block;
+    }
   }
   .aboutMe {
     margin-top: 300px;

@@ -6,10 +6,11 @@ export default function AboutLottie() {
   return (
     <div className="aboutMeLottie">
       <Lottie animationData={AboutMe} loop={true} />
-      <h2>
-        Get to know me! Click
+      <p>Get to know me!</p>
+      <h6>
+        Click
         <ArrowUpwardIcon />
-      </h2>
+      </h6>
     </div>
   );
 }
