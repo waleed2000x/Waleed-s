@@ -1,8 +1,10 @@
-/* eslint-disable react/no-unescaped-entities */
-import AboutLottie from "./HomeLotties/AboutLottie";
+import { Link } from "react-scroll";
+import About from "../About/About";
 import ComputerLottie from "./HomeLotties/ComputerLottie";
 import ReactLottie from "./HomeLotties/ReactLottie";
 import TabletLottie from "./HomeLotties/TabletLottie";
+import { Tooltip } from "@mui/material";
+import AboutLottie from "../About/AboutLottie";
 
 export default function Home() {
   return (
@@ -17,27 +19,22 @@ export default function Home() {
           </div>
         </div>
         <div className="rightLotties">
+          <Link
+            to="aboutScroll"
+            className="aboutSection"
+            smooth={true}
+            duration={500}
+          >
+            <div className="aboutNavigator">
+              <AboutLottie />
+            </div>
+          </Link>
           <div className="reactLotties">
             <ReactLottie />
           </div>
         </div>
       </div>
-      <div className="aboutMe">
-        <div className="aboutLottie">
-          <AboutLottie />
-        </div>
-        <h1>Frontend React Developer</h1>
-        <p>
-          I'm a passionate front-end React developer with a knack for turning
-          designs into engaging web experiences. Proficient in HTML, CSS, and
-          JavaScript, I specialize in creating responsive interfaces using
-          React. With a keen eye for detail and a focus on user-centered design,
-          I'm dedicated to crafting seamless and performant applications that
-          captivate users. Let's collaborate to bring your ideas to life and
-          create memorable digital solutions.
-        </p>
-        <div className="aboutIcons"></div>
-      </div>
+      <About />
     </div>
   );
 }

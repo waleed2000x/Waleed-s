@@ -1,4 +1,4 @@
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 export default function Widescreen() {
   return (
     <div className="wideAppbarParent">
