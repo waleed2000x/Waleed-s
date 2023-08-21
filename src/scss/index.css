@@ -102,6 +102,9 @@
   background-color: rgba(0, 0, 0, 0.8);
   margin: 200px 0px;
 }
+.homeParent .aboutMe .aboutLottie {
+  width: 30%;
+}
 .homeParent .aboutMe h1 {
   margin-top: 100px;
   font-size: 50px;

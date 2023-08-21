@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+import AboutLottie from "./HomeLotties/AboutLottie";
 import ComputerLottie from "./HomeLotties/ComputerLottie";
 import ReactLottie from "./HomeLotties/ReactLottie";
 import TabletLottie from "./HomeLotties/TabletLottie";
@@ -21,6 +23,9 @@ export default function Home() {
         </div>
       </div>
       <div className="aboutMe">
+        <div className="aboutLottie">
+          <AboutLottie />
+        </div>
         <h1>Frontend React Developer</h1>
         <p>
           I'm a passionate front-end React developer with a knack for turning
