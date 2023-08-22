@@ -5,6 +5,8 @@ import ReactLottie from "./HomeLotties/ReactLottie";
 import TabletLottie from "./HomeLotties/TabletLottie";
 import { Tooltip } from "@mui/material";
 import AboutLottie from "../About/AboutLottie";
+import MouseParallax from "./Mouse Parallax/MouseParralax";
+import Skillset from "../Skillset/Skillset";
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
             <TabletLottie />
           </div>
         </div>
+        <MouseParallax />
         <div className="rightLotties">
           <Link
             to="aboutScroll"
@@ -35,6 +38,7 @@ export default function Home() {
         </div>
       </div>
       <About />
+      <Skillset />
     </div>
   );
 }

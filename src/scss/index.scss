@@ -32,15 +32,19 @@
 
 /* Header */
 .wideAppbarParent {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
   height: 100px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.9);
   & h1 {
     font-size: 50px;
     font-weight: 800;
     letter-spacing: 3px;
+    cursor: pointer;
   }
   .MuiButton-root {
     height: 45%;
@@ -89,7 +93,8 @@
 .homeParent {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 90%;
+  margin-top: 100px;
 }
 
 /* Lotties in Home Section */
@@ -97,6 +102,89 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+/* Center Parallax Div */
+.aboutCenterParent {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  .parallaxParent {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  .moveable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: transform 0.2s ease-out;
+    position: absolute;
+    .parallaxIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 14px;
+      & a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        & svg {
+          font-size: 60px;
+        }
+      }
+    }
+    .linkedin {
+      background-color: white;
+      & svg {
+        color: #0077b5;
+        border-radius: 14px;
+      }
+    }
+    .facebook {
+      background-color: black;
+      & svg {
+        color: #3b5998;
+        font-size: 70px;
+        border-radius: 14px;
+      }
+    }
+    .instagram {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+    }
+  }
+
+  .top {
+    top: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+  .bottom {
+    bottom: 0;
+  }
+
+  .left {
+    left: 0;
+  }
 }
 
 /* Animation Keyframes */
@@ -181,6 +269,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -208,6 +297,51 @@
   font-size: 30px;
   z-index: 1;
   text-align: center;
+}
+// Skillset
+.skillsetParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  .skillsetTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    & p {
+      font-size: 50px;
+    }
+  }
+  .sliders {
+    width: 40%;
+    margin: 20px 0px;
+    .sliderTitle {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      & p {
+        font-size: 30px;
+      }
+      .imageSkill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        // border-radius: 50%;
+        background: transparent;
+        & img {
+          width: 50px;
+          height: 50px;
+          // border-radius: 50%;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1000px) {
   .backgroundLottie {

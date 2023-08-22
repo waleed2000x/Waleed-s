@@ -18,7 +18,6 @@ export default function About() {
         captivate users. Let's collaborate to bring your ideas to life and
         create memorable digital solutions.
       </p>
-      <div className="aboutIcons"></div>
     </Element>
   );
 }
