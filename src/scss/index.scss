@@ -109,7 +109,6 @@
   display: flex;
   justify-content: center;
   width: 50%;
-
   .parallaxParent {
     position: relative;
     display: flex;
@@ -119,6 +118,17 @@
     width: 100%;
     border-radius: 50%;
     margin-top: 20px;
+
+    animation: rotateParallax 3s ease-in-out forwards;
+  }
+
+  @keyframes rotateParallax {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
 
   .moveable {
@@ -269,7 +279,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
+  margin-top: 100px;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -302,11 +313,13 @@
 .skillsetParent {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 90%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   .skillsetTitle {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,28 +329,34 @@
       font-size: 50px;
     }
   }
-  .sliders {
-    width: 40%;
-    margin: 20px 0px;
-    .sliderTitle {
-      display: flex;
-      justify-content: space-between;
-      height: 50px;
-      & p {
-        font-size: 30px;
-      }
-      .imageSkill {
+  .slidersParent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    .sliders {
+      width: 40%;
+      margin: 20px 0px;
+      .sliderTitle {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
+        justify-content: space-between;
         height: 50px;
-        // border-radius: 50%;
-        background: transparent;
-        & img {
+        & p {
+          font-size: 30px;
+        }
+        .imageSkill {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 50px;
           height: 50px;
           // border-radius: 50%;
+          background: transparent;
+          & img {
+            width: 50px;
+            height: 50px;
+            // border-radius: 50%;
+          }
         }
       }
     }
@@ -403,7 +422,33 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .slidersParent {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    .sliders {
+      width: 80vw;
+    }
+  }
+}
 @media screen and (max-width: 500px) {
+  .aboutCenterParent {
+    position: absolute;
+    top: 150px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    .parallaxIcon {
+      width: 40px;
+      height: 40px;
+      & svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
   .leftLotties {
     min-height: 70vh;
   }

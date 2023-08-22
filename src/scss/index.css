@@ -118,6 +118,15 @@
   width: 100%;
   border-radius: 50%;
   margin-top: 20px;
+  animation: rotateParallax 3s ease-in-out forwards;
+}
+@keyframes rotateParallax {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 .aboutCenterParent .moveable {
   display: flex;
@@ -256,7 +265,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  margin-top: 100px;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -289,12 +298,14 @@
 .skillsetParent {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 90%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .skillsetParent .skillsetTitle {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,19 +315,25 @@
 .skillsetParent .skillsetTitle p {
   font-size: 50px;
 }
-.skillsetParent .sliders {
+.skillsetParent .slidersParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.skillsetParent .slidersParent .sliders {
   width: 40%;
   margin: 20px 0px;
 }
-.skillsetParent .sliders .sliderTitle {
+.skillsetParent .slidersParent .sliders .sliderTitle {
   display: flex;
   justify-content: space-between;
   height: 50px;
 }
-.skillsetParent .sliders .sliderTitle p {
+.skillsetParent .slidersParent .sliders .sliderTitle p {
   font-size: 30px;
 }
-.skillsetParent .sliders .sliderTitle .imageSkill {
+.skillsetParent .slidersParent .sliders .sliderTitle .imageSkill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,7 +341,7 @@
   height: 50px;
   background: transparent;
 }
-.skillsetParent .sliders .sliderTitle .imageSkill img {
+.skillsetParent .slidersParent .sliders .sliderTitle .imageSkill img {
   width: 50px;
   height: 50px;
 }
@@ -389,7 +406,33 @@
     margin-top: 140px;
   }
 }
+@media screen and (max-width: 600px) {
+  .slidersParent {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .slidersParent .sliders {
+    width: 80vw;
+  }
+}
 @media screen and (max-width: 500px) {
+  .aboutCenterParent {
+    position: absolute;
+    top: 150px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  .aboutCenterParent .parallaxIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .aboutCenterParent .parallaxIcon svg {
+    width: 40px;
+    height: 40px;
+  }
   .leftLotties {
     min-height: 70vh;
   }

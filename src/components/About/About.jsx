@@ -10,13 +10,21 @@ export default function About() {
       </div>
       <h1>Frontend React Developer</h1>
       <p>
-        I'm a passionate front-end React developer with a knack for turning
-        designs into engaging web experiences. Proficient in HTML, CSS, and
-        JavaScript, I specialize in creating responsive interfaces using React.
-        With a keen eye for detail and a focus on user-centered design, I'm
-        dedicated to crafting seamless and performant applications that
-        captivate users. Let's collaborate to bring your ideas to life and
-        create memorable digital solutions.
+        That's an excellent introduction and overview of your skills and passion
+        as a front-end React developer! It effectively highlights your
+        proficiency and dedication in turning designs into engaging web
+        experiences. The mention of your expertise in HTML, CSS, JavaScript, and
+        React, along with your ability to create responsive interfaces,
+        showcases your technical abilities. The emphasis on user-centered design
+        and creating seamless, performant applications demonstrates your
+        commitment to providing a high-quality user experience.
+      </p>
+      <p style={{ marginTop: "0px" }}>
+        Additionally, your capabilities in working with tools like Strapi and
+        Firebase add a valuable layer to your skill set, allowing you to build
+        dynamic and database-driven web applications. Mentioning collaboration
+        and bringing ideas to life shows your enthusiasm for teamwork and
+        creativity.
       </p>
     </Element>
   );

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { Tooltip } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -39,7 +40,7 @@ const MouseParallax = () => {
         <div className="moveable top">
           <Tooltip title="https://github.com/waleed2000x">
             <div className="parallaxIcon">
-              <a href="https://github.com/waleed2000x">
+              <a href="https://github.com/waleed2000x" target="_blank">
                 <GitHubIcon />
               </a>
             </div>
@@ -48,7 +49,10 @@ const MouseParallax = () => {
         <div className="moveable right">
           <Tooltip title="waleedahmed.x">
             <div className="parallaxIcon instagram">
-              <a href="https://www.instagram.com/waleedahmed.x/">
+              <a
+                href="https://www.instagram.com/waleedahmed.x/"
+                target="_blank"
+              >
                 <InstagramIcon />
               </a>
             </div>
@@ -57,7 +61,7 @@ const MouseParallax = () => {
         <div className="moveable bottom">
           <Tooltip title="waleedahmed.x">
             <div className="parallaxIcon facebook">
-              <a href="https://www.facebook.com/waleedahmed.x/">
+              <a href="https://www.facebook.com/waleedahmed.x/" target="_blank">
                 <FacebookIcon />
               </a>
             </div>
@@ -66,7 +70,10 @@ const MouseParallax = () => {
         <div className="moveable left">
           <Tooltip title="linkedin.com/in/waleedahmedx">
             <div className="parallaxIcon linkedin">
-              <a href="https://www.linkedin.com/in/waleedahmedx">
+              <a
+                href="https://www.linkedin.com/in/waleedahmedx"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </a>
             </div>
