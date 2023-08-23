@@ -45,7 +45,48 @@
     font-weight: 800;
     letter-spacing: 3px;
     cursor: pointer;
+    position: relative; /* Add position relative to the h1 element */
+
+    & span {
+      color: rgb(68, 11, 254);
+      position: absolute;
+      top: 0;
+      animation-duration: 1s; /* Adjust the animation duration as needed */
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    .left-animation {
+      left: -40px; /* Adjust the initial position */
+      animation-name: floatLeft;
+    }
+
+    .right-animation {
+      right: -80px; /* Adjust the initial position */
+      animation-name: floatRight;
+    }
   }
+
+  @keyframes floatLeft {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px); /* Adjust the float distance */
+    }
+  }
+
+  @keyframes floatRight {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px); /* Adjust the float distance */
+    }
+  }
+
   .MuiButton-root {
     height: 45%;
     border-color: white;
@@ -70,7 +111,7 @@
 }
 /* Small Screen Dropdown */
 .dropAppbar {
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 0px;
   display: flex;
@@ -196,7 +237,23 @@
     left: 0;
   }
 }
-
+/* PROJECTS */
+.projectParent {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+  .projectTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    & p {
+      font-size: 50px;
+    }
+    .projects {
+    }
+  }
+}
 /* Animation Keyframes */
 @keyframes fadeUp {
   from {

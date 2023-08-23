@@ -14,11 +14,15 @@ import Framer from "./Images/Framer.png";
 export default function Skillset() {
   return (
     <Element name="skills" className="skillsetParent">
-      <div className="skillsetTitle">
+      <div
+        className="skillsetTitle"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         <p>Skill Set</p>
       </div>
       <div className="slidersParent">
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>HTML</p>
             <div className="imageSkill">
@@ -27,7 +31,7 @@ export default function Skillset() {
           </div>
           <Slider color="warning" value={95} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>CSS</p>
             <div className="imageSkill">
@@ -36,7 +40,7 @@ export default function Skillset() {
           </div>
           <Slider color="info" value={85} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>JavaScript</p>
             <div className="imageSkill">
@@ -49,7 +53,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Bootstrap</p>
             <div className="imageSkill">
@@ -62,7 +66,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>React</p>
             <div className="imageSkill">
@@ -71,7 +75,7 @@ export default function Skillset() {
           </div>
           <Slider value={90} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Node</p>
             <div className="imageSkill">
@@ -80,7 +84,7 @@ export default function Skillset() {
           </div>
           <Slider color="success" value={70} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Material UI</p>
             <div className="imageSkill">
@@ -89,7 +93,7 @@ export default function Skillset() {
           </div>
           <Slider value={70} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>SCSS</p>
             <div className="imageSkill">
@@ -102,7 +106,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Firebase</p>
             <div className="imageSkill">
@@ -115,7 +119,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Strapi</p>
             <div className="imageSkill">
@@ -128,7 +132,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Framer Motion</p>
             <div className="imageSkill">

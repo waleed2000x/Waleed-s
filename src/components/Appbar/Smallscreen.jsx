@@ -20,10 +20,35 @@ export default function Smallscreen() {
       </div>
       {showBar ? (
         <div className="dropAppbar">
-          <Link style={{ borderTop: "none" }}>Projects</Link>
-          <Link>Skills</Link>
+          <Link
+            style={{ borderTop: "none" }}
+            to="skills"
+            duration={1000}
+            onClick={() => {
+              setShowBar(false);
+            }}
+          >
+            Skills
+          </Link>
+          <Link
+            to="projects"
+            duration={1000}
+            onClick={() => {
+              setShowBar(false);
+            }}
+          >
+            Projects
+          </Link>
           <Link>Resume</Link>
-          <Link>Contact</Link>
+          <Link
+            to="contact"
+            duration={1000}
+            onClick={() => {
+              setShowBar(false);
+            }}
+          >
+            Contact
+          </Link>
         </div>
       ) : null}
     </>

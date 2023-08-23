@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { Tooltip } from "@mui/material";
+import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -12,7 +13,7 @@ const MouseParallax = () => {
     const moveX = (event.clientX - centerX) / centerX;
     const moveY = (event.clientY - centerY) / centerY;
 
-    const moveFactor = 20; // Adjust this value to control the intensity of movement
+    const moveFactor = 10;
 
     const xMove = -moveX * moveFactor;
     const yMove = -moveY * moveFactor;
@@ -39,26 +40,38 @@ const MouseParallax = () => {
       <div className="parallaxParent">
         <div className="moveable top">
           <Tooltip title="https://github.com/waleed2000x">
-            <div className="parallaxIcon">
+            <motion.div
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="parallaxIcon"
+            >
               <a href="https://github.com/waleed2000x" target="_blank">
                 <GitHubIcon />
               </a>
-            </div>
+            </motion.div>
           </Tooltip>
         </div>
         <div className="moveable right">
           <Tooltip title="waleedahmed.x">
-            <div className="parallaxIcon instagram">
+            <motion.div
+              whileHover={{ scale: 1.3 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="parallaxIcon instagram"
+            >
               <a
                 href="https://www.instagram.com/waleedahmed.x/"
                 target="_blank"
               >
                 <InstagramIcon />
               </a>
-            </div>
+            </motion.div>
           </Tooltip>
         </div>
-        <div className="moveable bottom">
+        <motion.div
+          whileHover={{ scale: 1.3 }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          className="moveable bottom"
+        >
           <Tooltip title="waleedahmed.x">
             <div className="parallaxIcon facebook">
               <a href="https://www.facebook.com/waleedahmed.x/" target="_blank">
@@ -66,8 +79,12 @@ const MouseParallax = () => {
               </a>
             </div>
           </Tooltip>
-        </div>
-        <div className="moveable left">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.3 }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          className="moveable left"
+        >
           <Tooltip title="linkedin.com/in/waleedahmedx">
             <div className="parallaxIcon linkedin">
               <a
@@ -78,7 +95,7 @@ const MouseParallax = () => {
               </a>
             </div>
           </Tooltip>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

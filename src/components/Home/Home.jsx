@@ -6,6 +6,7 @@ import TabletLottie from "./HomeLotties/TabletLottie";
 import AboutLottie from "../About/AboutLottie";
 import MouseParallax from "./Mouse Parallax/MouseParralax";
 import Skillset from "../Skillset/Skillset";
+import Projects from "../Projects/Projects";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
             to="aboutScroll"
             className="aboutSection"
             smooth={true}
-            duration={500}
+            duration={1000}
           >
             <div className="aboutNavigator">
               <AboutLottie />
@@ -38,6 +39,7 @@ export default function Home() {
       </div>
       <About />
       <Skillset />
+      <Projects />
     </div>
   );
 }

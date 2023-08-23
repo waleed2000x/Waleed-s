@@ -20,11 +20,10 @@ export default function About() {
         commitment to providing a high-quality user experience.
       </p>
       <p style={{ marginTop: "0px" }}>
-        Additionally, your capabilities in working with tools like Strapi and
-        Firebase add a valuable layer to your skill set, allowing you to build
-        dynamic and database-driven web applications. Mentioning collaboration
-        and bringing ideas to life shows your enthusiasm for teamwork and
-        creativity.
+        Additionally, my capabilities in working with tools like Strapi and
+        Firebase add a valuable layer to my skill set, allowing to build dynamic
+        and database-driven web applications. Mentioning collaboration and
+        bringing ideas to life shows enthusiasm for teamwork and creativity.
       </p>
     </Element>
   );
