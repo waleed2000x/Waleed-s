@@ -17,7 +17,7 @@ export default function Skillset() {
       <div
         className="skillsetTitle"
         data-aos="zoom-in"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
       >
         <p>Skill Set</p>
       </div>

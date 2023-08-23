@@ -5,6 +5,10 @@
   font-family: "Caveat", cursive;
   margin: 0;
   padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /* Parent Container */
@@ -45,24 +49,24 @@
     font-weight: 800;
     letter-spacing: 3px;
     cursor: pointer;
-    position: relative; /* Add position relative to the h1 element */
+    position: relative;
 
     & span {
       color: rgb(68, 11, 254);
       position: absolute;
       top: 0;
-      animation-duration: 1s; /* Adjust the animation duration as needed */
+      animation-duration: 1s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
     }
 
     .left-animation {
-      left: -40px; /* Adjust the initial position */
+      left: -30px;
       animation-name: floatLeft;
     }
 
     .right-animation {
-      right: -80px; /* Adjust the initial position */
+      right: -80px;
       animation-name: floatRight;
     }
   }
@@ -73,7 +77,7 @@
       transform: translateX(0);
     }
     50% {
-      transform: translateX(-5px); /* Adjust the float distance */
+      transform: translateX(-5px);
     }
   }
 
@@ -83,7 +87,7 @@
       transform: translateX(0);
     }
     50% {
-      transform: translateX(5px); /* Adjust the float distance */
+      transform: translateX(5px);
     }
   }
 
@@ -160,7 +164,9 @@
     border-radius: 50%;
     margin-top: 20px;
 
-    animation: rotateParallax 3s ease-in-out forwards;
+    opacity: 0;
+    animation: rotateParallax 3s ease-in-out forwards,
+      fadeIn 5000ms ease-in-out forwards;
   }
 
   @keyframes rotateParallax {
@@ -169,6 +175,12 @@
     }
     to {
       transform: rotate(0deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
     }
   }
 
@@ -241,6 +253,7 @@
 .projectParent {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   min-height: 100vh;
   .projectTitle {
@@ -250,7 +263,40 @@
     & p {
       font-size: 50px;
     }
-    .projects {
+  }
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+    .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #212121d0;
+      width: 35%;
+      padding: 5px;
+      border-radius: 5px;
+      min-height: 20vh;
+      & h1 {
+        font-weight: 700;
+      }
+      & img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      & a {
+        width: 100%;
+        text-align: end;
+        text-decoration: none;
+        color: white;
+        padding: 10px 0px;
+        &:hover {
+          color: #c9c9c9;
+        }
+      }
     }
   }
 }
@@ -436,6 +482,12 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .left-animation {
+    right: 110px;
+  }
+  .right-animation {
+    left: 180px;
+  }
   .wideAppbarParent h1 {
     font-size: 30px;
   }
@@ -484,9 +536,9 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    .sliders {
-      width: 80vw;
-    }
+  }
+  .skillsetParent .slidersParent .sliders {
+    width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
