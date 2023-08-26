@@ -252,13 +252,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(33, 33, 33, 0.8156862745);
   width: 35%;
   padding: 5px;
   border-radius: 5px;
   min-height: 20vh;
 }
 .projectParent .projects .project h1 {
+  padding: 10px 0px;
   font-weight: 700;
 }
 .projectParent .projects .project img {
@@ -272,6 +272,7 @@
   text-decoration: none;
   color: white;
   padding: 10px 0px;
+  font-size: 25px;
 }
 .projectParent .projects .project a:hover {
   color: #c9c9c9;
