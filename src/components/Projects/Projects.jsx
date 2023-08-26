@@ -9,7 +9,6 @@ export default function Projects() {
     <Element name="projects" className="projectParent">
       <div className="projectTitle" data-aos="zoom-in" data-aos-duration="1000">
         <p>Here we have some projects</p>
-        <p>That I&apos;ve worked on</p>
       </div>
       <div className="projects">
         <Project

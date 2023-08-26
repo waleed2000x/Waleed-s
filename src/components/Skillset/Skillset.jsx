@@ -1,6 +1,6 @@
 import { Slider } from "@mui/material";
 import { Element } from "react-scroll";
-// import Html from "./Images/Html.png";
+import Html from "./Images/Html.png";
 import CSS from "./Images/CSS.png";
 import JS from "./Images/JS.avif";
 import ReactLottie from "../Home/HomeLotties/ReactLottie";
@@ -27,7 +27,7 @@ export default function Skillset() {
           <div className="sliderTitle">
             <p>HTML</p>
             <div className="imageSkill">
-              <img src={CSS} alt="HTML" />
+              <img src={Html} alt="HTML" />
             </div>
           </div>
           <Slider color="warning" value={95} valueLabelDisplay="auto" />
