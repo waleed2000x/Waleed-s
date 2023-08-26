@@ -2,6 +2,7 @@ import { Element } from "react-scroll";
 import CarMed from "./Images/CarMed.png";
 import VibeVault from "./Images/VibeVault.png";
 import PropertyPort from "./Images/PropertyPort.png";
+import Viventa from "./Images/Viventa.png";
 import Project from "./Project";
 export default function Projects() {
   return (
@@ -32,9 +33,9 @@ export default function Projects() {
           Fade="fade-right"
         />
         <Project
-          title="Car Med ( Broken )"
-          Image={CarMed}
-          Link="https://carmed.onrender.com/"
+          title="Viventa"
+          Image={Viventa}
+          Link="https://viventa.netlify.app/"
           Fade="fade-left"
         />
       </div>

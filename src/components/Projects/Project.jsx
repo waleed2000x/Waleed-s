@@ -6,12 +6,12 @@ export default function Project({ title, Image, Link, Fade }) {
       data-aos={Fade}
       data-aos-duration="2000"
       className="project"
-      whileHover={{ scale: 1.5 }}
+      whileHover={{ scale: 1.2 }}
     >
       <h1>{title}</h1>
       <img src={Image} alt="CarMed" />
       <a href={Link} target="blank">
-        View Project
+        <p>View Project</p>
       </a>
     </motion.div>
   );
