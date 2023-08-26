@@ -25,7 +25,7 @@ export default function Skillset() {
       <div className="slidersParent">
         <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
-            <p>HTML</p>
+            <p>HTMLh</p>
             <div className="imageSkill">
               <img src={Html} alt="HTML" />
             </div>
