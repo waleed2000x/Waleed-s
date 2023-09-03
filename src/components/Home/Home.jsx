@@ -7,7 +7,7 @@ import AboutLottie from "../About/AboutLottie";
 import MouseParallax from "./Mouse Parallax/MouseParralax";
 import Skillset from "../Skillset/Skillset";
 import Projects from "../Projects/Projects";
-import Contact from "../contact/contact";
+import Contact from "../contact/Contact";
 export default function Home() {
   return (
     <div className="homeParent">
