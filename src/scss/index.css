@@ -442,6 +442,49 @@
   height: 50px;
 }
 
+.contactParent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contactParent .contactForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  margin-top: 100px;
+}
+.contactParent .contactForm .leftContact {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.contactParent .contactForm .leftContact p {
+  margin: 70px 0px 0px 70px;
+  font-size: 70px;
+  font-weight: 900;
+  border-bottom: 5px solid orangered;
+  width: -moz-max-content;
+  width: max-content;
+}
+.contactParent .contactForm .rightContact {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.contactParent .lottieContact {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  margin-top: 100px;
+}
+
 @media screen and (max-width: 1000px) {
   .backgroundLottie {
     top: 45%;
