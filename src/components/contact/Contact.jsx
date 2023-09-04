@@ -131,7 +131,7 @@ export default function Contact() {
             placeholder="Message"
             multiline
             variant="standard"
-            maxRows={10}
+            maxRows={5}
             name="message"
             value={values.message}
             onChange={handleChange}
