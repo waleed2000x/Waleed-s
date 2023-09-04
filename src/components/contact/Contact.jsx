@@ -8,23 +8,28 @@ export default function Contact() {
     function _turnstileCb(response) {
       console.debug("Turnstile verification response:", response);
     }
-    const script = document.createElement("script");
-    script.src =
-      "https://www.cloudflare.com/cdn-cgi/scripts/4Wq6W6J1/cloudflare-static/turnstile.min.js";
-    script.async = true;
-    script.onload = () => {
-      window.turnstile.render("#myWidget", {
-        sitekey: "0x4AAAAAAAJovBJuxtfEvcgQ",
-        theme: "light",
-        callback: _turnstileCb,
-      });
+
+    const loadTurnstileScript = () => {
+      const script = document.createElement("script");
+      script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        window.turnstile.render(".cf-turnstile", {
+          sitekey: "0x4AAAAAAAJovBJuxtfEvcgQ", // Replace with your sitekey
+          theme: "light",
+          callback: _turnstileCb,
+        });
+      };
+
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
     };
 
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+    loadTurnstileScript();
   }, []);
 
   return (
@@ -50,8 +55,8 @@ export default function Contact() {
               size="large"
               placeholder="Email"
             />
-            {/* Add the Turnstile CAPTCHA widget container */}
-            <div id="myWidget" className="cf-turnstile"></div>
+            {/* The Turnstile CAPTCHA widget will be rendered inside this div */}
+            <div className="cf-turnstile"></div>
           </div>
         </div>
         <div className="rightContact"></div>
