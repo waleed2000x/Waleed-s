@@ -447,7 +447,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 110vh;
+  height: 70vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .contactParent .contactForm {
@@ -465,13 +465,16 @@
   width: 40%;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.contactParent .contactForm .leftContact p {
+.contactParent .contactForm .leftContact h1 {
   margin: 70px 0px 0px 70px;
   font-size: 70px;
   font-weight: 900;
   color: black;
   width: -moz-max-content;
   width: max-content;
+}
+.contactParent .contactForm .leftContact p {
+  font: 25px;
 }
 .contactParent .contactForm .leftContact .contactLeftInputs {
   display: flex;
@@ -524,6 +527,8 @@
   left: 0px;
   z-index: 1;
   margin-top: 100px;
+  width: 100%;
+  height: 40%;
 }
 
 @media screen and (max-width: 1000px) {

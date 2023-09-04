@@ -2,8 +2,42 @@ import { Button, TextField } from "@mui/material";
 import ContactLottie from "./contactLottie";
 import { Element } from "react-scroll";
 import { useEffect } from "react";
+import { useFormik } from "formik";
+import ContactSchema from "./ContactSchema";
+import emailjs from "@emailjs/browser";
 
+const iValues = {
+  fullname: "",
+  email: "",
+  message: "",
+};
 export default function Contact() {
+  const {
+    values,
+    errors,
+    touched,
+    handleChange,
+    handleSubmit,
+    handleBlur,
+    resetForm,
+  } = useFormik({
+    initialValues: iValues,
+    validationSchema: ContactSchema,
+    onSubmit: () => {
+      emailjs.send(
+        "service_yijdw0n",
+        "template_l4ekoov",
+        {
+          fullname: values.fullname,
+          contact: values.contact,
+          message: values.message,
+          email: values.email,
+        },
+        "zcKF8sOM7vmxCXLng"
+      );
+    },
+  });
+
   useEffect(() => {
     function _turnstileCb(response) {
       console.debug("Turnstile verification response:", response);
@@ -41,7 +75,7 @@ export default function Contact() {
       <div className="contactForm">
         <div className="leftContact">
           <div className="contactTitle">
-            <p>Contact .</p>
+            <h1>Contact .</h1>
           </div>
           <div className="contactLeftInputs">
             <div className="leftInputs">
@@ -50,15 +84,32 @@ export default function Contact() {
                 label="Full Name"
                 size="large"
                 placeholder="Full Name"
+                name="fullname"
+                value={values.fullname}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                error={errors.fullname}
+                helperText={
+                  errors.fullname && touched.fullname ? (
+                    <p>{errors.fullname}</p>
+                  ) : null
+                }
               />
               <TextField
                 variant="standard"
                 label="Email"
                 size="large"
                 placeholder="Email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                error={errors.email}
+                helperText={
+                  errors.email && touched.email ? <p>{errors.email}</p> : null
+                }
               />
             </div>
-            {/* The Turnstile CAPTCHA widget will be rendered inside this div */}
             <div className="cf-turnstile"></div>
           </div>
         </div>
@@ -70,8 +121,21 @@ export default function Contact() {
             multiline
             variant="standard"
             maxRows={10}
+            name="message"
+            value={values.message}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={errors.message}
+            helperText={
+              errors.message && touched.message ? <p>{errors.message}</p> : null
+            }
           />
-          <Button color="primary" variant="contained" size="large">
+          <Button
+            color="primary"
+            variant="contained"
+            size="large"
+            onClick={handleSubmit}
+          >
             Send
           </Button>
         </div>
