@@ -510,6 +510,9 @@
           align-items: center;
           width: 100%;
           height: 50%;
+          .css-i44wyl {
+            width: 80%;
+          }
           .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
             width: 80%;
             // margin-top: 20px;
@@ -523,6 +526,7 @@
     .rightContact {
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 40%;
       height: auto;
       background-color: rgba(255, 255, 255, 0.5);

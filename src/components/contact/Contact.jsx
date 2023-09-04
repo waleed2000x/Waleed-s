@@ -71,7 +71,7 @@ export default function Contact() {
             variant="standard"
             maxRows={10}
           />
-          <Button color="warning" variant="contained" size="large">
+          <Button color="primary" variant="contained" size="large">
             Send
           </Button>
         </div>
