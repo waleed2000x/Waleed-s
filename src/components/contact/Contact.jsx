@@ -19,6 +19,7 @@ export default function Contact() {
           sitekey: "0x4AAAAAAAJovBJuxtfEvcgQ", // Replace with your sitekey
           theme: "light",
           callback: _turnstileCb,
+          mode: "interactive",
         });
       };
 
