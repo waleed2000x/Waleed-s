@@ -61,7 +61,7 @@ export default function Contact() {
       script.defer = true;
       script.onload = () => {
         window.turnstile.render(".cf-turnstile", {
-          sitekey: "0x4AAAAAAAJovBJuxtfEvcgQ", // Replace with your sitekey
+          sitekey: "0x4AAAAAAAJovD7gUgx3JvhGl9jTA_KQgnE",
           theme: "dark",
           callback: _turnstileCb,
           mode: "managed",
@@ -146,6 +146,7 @@ export default function Contact() {
             variant="contained"
             size="large"
             onClick={handleSubmit}
+            fullWidth
           >
             Send
           </Button>

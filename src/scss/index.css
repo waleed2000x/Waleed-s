@@ -527,11 +527,8 @@
   margin-top: 16px;
   height: 100%;
 }
-.contactParent .contactForm .rightContact .css-jh47zj-MuiButtonBase-root-MuiButton-root {
-  width: 95%;
-}
 .contactParent .contactForm .rightContact button {
-  margin: 20px 10px;
+  margin: 20px 20px 20px 0px;
 }
 .contactParent .lottieContact {
   position: absolute;
