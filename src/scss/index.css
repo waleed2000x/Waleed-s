@@ -447,14 +447,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 110vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .contactParent .contactForm {
   display: flex;
   justify-content: center;
   width: 100%;
-  min-height: 70%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   margin-top: 100px;
@@ -463,13 +461,16 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px 0px 0px 10px;
 }
 .contactParent .contactForm .leftContact h1 {
   margin: 70px 0px 0px 70px;
   font-size: 70px;
   font-weight: 900;
-  color: black;
+  color: white;
   width: -moz-max-content;
   width: max-content;
 }
@@ -507,8 +508,11 @@
   align-items: center;
   width: 40%;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   justify-content: space-between;
+  border-radius: 0px 10px 10px 0px;
 }
 .contactParent .contactForm .rightContact .css-i44wyl {
   width: 100%;
@@ -516,28 +520,32 @@
   margin: 30% 0px;
 }
 .contactParent .contactForm .rightContact .css-repss6 {
-  height: 100%;
+  height: 90%;
 }
 .contactParent .contactForm .rightContact .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
   height: 300px;
   margin: 30% 0px;
-  width: 100%;
+  width: 90%;
 }
 .contactParent .contactForm .rightContact label + .css-1rb63tl-MuiInputBase-root-MuiInput-root {
   margin-top: 16px;
-  height: 100%;
+  height: 90%;
 }
-.contactParent .contactForm .rightContact button {
-  margin: 20px 20px 20px 0px;
+.contactParent .contactForm .rightContact .buttonContact {
+  width: 95%;
+  margin: 20px 0px;
 }
 .contactParent .lottieContact {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: 0px;
+  top: 100px;
   left: 0px;
   z-index: 1;
-  margin-top: 100px;
   width: 100%;
-  height: 40%;
+}
+.contactParent .lottieContact .lottieContactCenter {
+  width: 80%;
 }
 
 @media screen and (max-width: 1000px) {

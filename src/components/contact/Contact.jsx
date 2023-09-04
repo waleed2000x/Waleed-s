@@ -81,12 +81,14 @@ export default function Contact() {
   return (
     <Element name="contact" className="contactParent">
       <div className="lottieContact">
-        <ContactLottie />
+        <div className="lottieContactCenter">
+          <ContactLottie />
+        </div>
       </div>
       <div className="contactForm">
         <div className="leftContact">
           <div className="contactTitle">
-            <h1>Contact .</h1>
+            <h1>Contact</h1>
           </div>
           <div className="contactLeftInputs">
             <div className="leftInputs">
@@ -141,15 +143,17 @@ export default function Contact() {
               errors.message && touched.message ? <p>{errors.message}</p> : null
             }
           />
-          <Button
-            color="primary"
-            variant="contained"
-            size="large"
-            onClick={handleSubmit}
-            fullWidth
-          >
-            Send
-          </Button>
+          <div className="buttonContact">
+            <Button
+              color="primary"
+              variant="contained"
+              size="large"
+              onClick={handleSubmit}
+              fullWidth
+            >
+              Send
+            </Button>
+          </div>
         </div>
       </div>
     </Element>
