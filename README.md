@@ -2,7 +2,7 @@
 
 Welcome to my GitHub repository! This is where I showcase my front-end development projects, using React to create modern and interactive web experiences.
 
-Demo: [Waleed's Portfolio](https://waleeddev.vercel.app/)
+# Visit Now: [Waleed's Portfolio](https://waleeddev.vercel.app/)
 
 Repository: [GitHub](https://github.com/yourusername/awesome-project)
 
@@ -26,7 +26,7 @@ Repository: [GitHub](https://github.com/yourusername/awesome-project)
 
 Description: Another brief description of your amazing project.
 
-Demo: [Visit Waleed's Portfolio](https://waleeddev.vercel.app)
+<!-- Demo: [Visit Waleed's Portfolio](https://waleeddev.vercel.app) -->
 
 Repository: [GitHub](https://github.com/waleed2000x/Waleed)
 
