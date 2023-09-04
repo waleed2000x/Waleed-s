@@ -28,9 +28,9 @@ Repository: [GitHub](https://github.com/yourusername/awesome-project)
 
 Description: Another brief description of your amazing project.
 
-Demo: [Live Demo](https://waleeddev.vercel.app)
+Demo: [Visit Waleed's Portfolio](https://waleeddev.vercel.app)
 
-Repository: [GitHub Repository](https://github.com/waleed2000x/Waleed)
+Repository: [GitHub](https://github.com/waleed2000x/Waleed)
 
 ## Technologies Used
 
