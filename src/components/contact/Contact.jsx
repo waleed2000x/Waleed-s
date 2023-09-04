@@ -3,8 +3,18 @@ import ContactLottie from "./contactLottie";
 import { Element } from "react-scroll";
 import { useEffect } from "react";
 import { useFormik } from "formik";
-import ContactSchema from "./ContactSchema";
 import emailjs from "@emailjs/browser";
+import * as Yup from "yup";
+
+const ContactSchema = Yup.object({
+  fullname: Yup.string().min(2).required("Name is a required field"),
+  email: Yup.string()
+    .email()
+    .min(4)
+    .max(35)
+    .required("Email is a required field"),
+  message: Yup.string().max(200).required("Message is a required field"),
+});
 
 const iValues = {
   fullname: "",
@@ -24,6 +34,7 @@ export default function Contact() {
     initialValues: iValues,
     validationSchema: ContactSchema,
     onSubmit: () => {
+      resetForm();
       emailjs.send(
         "service_yijdw0n",
         "template_l4ekoov",
