@@ -1,4 +1,5 @@
 # My Portfolio
+
 Welcome to my GitHub repository! This is where I showcase my front-end development projects, using React to create modern and interactive web experiences.
 
 ![Portfolio](./images/banner.png)
@@ -7,16 +8,29 @@ Demo: [Live Demo](https://waleeddev.vercel.app/)
 
 Repository: [GitHub Repository](https://github.com/yourusername/awesome-project)
 
-![Project 1 Screenshot](./images/project1.png)
+![Project First Sight ](./ReadMeImages/FirstSight.png)
 
-### Amazing Project
+## About Section
+
+![Project About Me ](./ReadMeImages/AboutMe.png)
+
+## Skill Set Section
+
+![Project About Me ](./ReadMeImages/SkillSet.png)
+
+## Projects Section
+
+![Project About Me ](./ReadMeImages/Projects.png)
+
+## Contact Section
+
+![Project About Me ](./ReadMeImages/Contact.png)
 
 Description: Another brief description of your amazing project.
 
 Demo: [Live Demo](https://waleeddev.vercel.app)
 
 Repository: [GitHub Repository](https://github.com/waleed2000x/Waleed)
-
 
 ## Technologies Used
 
