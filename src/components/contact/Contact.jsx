@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import ContactLottie from "./contactLottie";
 import { Element } from "react-scroll";
 import { useEffect } from "react";
@@ -17,9 +17,9 @@ export default function Contact() {
       script.onload = () => {
         window.turnstile.render(".cf-turnstile", {
           sitekey: "0x4AAAAAAAJovBJuxtfEvcgQ", // Replace with your sitekey
-          theme: "light",
+          theme: "dark",
           callback: _turnstileCb,
-          mode: "interactive",
+          mode: "managed",
         });
       };
 
@@ -44,23 +44,37 @@ export default function Contact() {
             <p>Contact .</p>
           </div>
           <div className="contactLeftInputs">
-            <TextField
-              variant="standard"
-              label="Full Name"
-              size="large"
-              placeholder="Full Name"
-            />
-            <TextField
-              variant="standard"
-              label="Email"
-              size="large"
-              placeholder="Email"
-            />
+            <div className="leftInputs">
+              <TextField
+                variant="standard"
+                label="Full Name"
+                size="large"
+                placeholder="Full Name"
+              />
+              <TextField
+                variant="standard"
+                label="Email"
+                size="large"
+                placeholder="Email"
+              />
+            </div>
             {/* The Turnstile CAPTCHA widget will be rendered inside this div */}
             <div className="cf-turnstile"></div>
           </div>
         </div>
-        <div className="rightContact"></div>
+        <div className="rightContact">
+          <TextField
+            id="outlined-multiline-flexible"
+            label="Message"
+            placeholder="Message"
+            multiline
+            variant="standard"
+            maxRows={10}
+          />
+          <Button color="warning" variant="contained" size="large">
+            Send
+          </Button>
+        </div>
       </div>
     </Element>
   );
