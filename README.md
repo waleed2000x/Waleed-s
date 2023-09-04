@@ -4,9 +4,9 @@ Welcome to my GitHub repository! This is where I showcase my front-end developme
 
 ![Portfolio](./images/banner.png)
 
-Demo: [Live Demo](https://waleeddev.vercel.app/)
+Demo: [Waleed's Portfolio](https://waleeddev.vercel.app/)
 
-Repository: [GitHub Repository](https://github.com/yourusername/awesome-project)
+Repository: [GitHub](https://github.com/yourusername/awesome-project)
 
 ![Project First Sight ](./ReadMeImages/FirstSight.png)
 
