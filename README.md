@@ -20,15 +20,17 @@ Repository: [GitHub Repository](https://github.com/waleed2000x/Waleed)
 
 ## Technologies Used
 
-- React
 - HTML5 & CSS3
 - SCSS
 - JavaScript (ES6+)
+- React
 - Material UI
 - React-Parallax
+- React Spring
+- React Lottie
+- Email js
 - Styled-Components
 - Animate on Scroll
-- React Lottie
 - Framer Motion
 - Responsive design with Flexbox/Grid
 - API integration for dynamic content
