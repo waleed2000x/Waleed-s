@@ -570,6 +570,13 @@
     }
   }
 }
+.footerParent {
+  display: flex;
+  min-height: 10vh;
+  & p {
+    font-size: 70px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .backgroundLottie {

@@ -548,6 +548,14 @@
   width: 80%;
 }
 
+.footerParent {
+  display: flex;
+  min-height: 10vh;
+}
+.footerParent p {
+  font-size: 70px;
+}
+
 @media screen and (max-width: 1000px) {
   .backgroundLottie {
     top: 45%;
