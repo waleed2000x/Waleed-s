@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div>
+    <div className="footerParent">
       <p>Footers</p>
     </div>
   );
