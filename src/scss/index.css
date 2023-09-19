@@ -550,12 +550,21 @@
 
 .footerParent {
   display: flex;
+  width: 100%;
   min-height: 10vh;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.footerParent p {
-  font-size: 70px;
+.footerParent h1 {
+  font-size: 50px;
+}
+.footerParent .socialIcons {
+  display: flex;
+  width: 15%;
+  justify-content: space-evenly;
+}
+.footerParent .socialIcons svg {
+  font-size: 40px;
 }
 
 @media screen and (max-width: 1000px) {
