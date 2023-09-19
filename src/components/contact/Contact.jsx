@@ -5,6 +5,21 @@ import { useEffect } from "react";
 import { useFormik } from "formik";
 import emailjs from "@emailjs/browser";
 import * as Yup from "yup";
+import { styled } from "styled-components";
+
+const StyledTextField = styled(TextField)`
+  .MuiOutlinedInput-root {
+    color: white;
+  }
+
+  .MuiInputLabel-root {
+    color: white;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: white;
+  }
+`;
 
 const ContactSchema = Yup.object({
   fullname: Yup.string().min(2).required("Name is a required field"),
@@ -92,8 +107,8 @@ export default function Contact() {
           </div>
           <div className="contactLeftInputs">
             <div className="leftInputs">
-              <TextField
-                variant="standard"
+              <StyledTextField
+                variant="outlined"
                 label="Full Name"
                 size="large"
                 placeholder="Full Name"
@@ -108,8 +123,8 @@ export default function Contact() {
                   ) : null
                 }
               />
-              <TextField
-                variant="standard"
+              <StyledTextField
+                variant="outlined"
                 label="Email"
                 size="large"
                 placeholder="Email"
@@ -127,22 +142,25 @@ export default function Contact() {
           </div>
         </div>
         <div className="rightContact">
-          <TextField
-            id="outlined-multiline-flexible"
-            label="Message"
-            placeholder="Message"
-            multiline
-            variant="standard"
-            maxRows={5}
-            name="message"
-            value={values.message}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            error={errors.message}
-            helperText={
-              errors.message && touched.message ? <p>{errors.message}</p> : null
-            }
-          />
+          <div className="centerMessages">
+            <StyledTextField
+              label="Message"
+              placeholder="Message"
+              multiline
+              variant="outlined"
+              maxRows={5}
+              name="message"
+              value={values.message}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              error={errors.message}
+              helperText={
+                errors.message && touched.message ? (
+                  <p>{errors.message}</p>
+                ) : null
+              }
+            />
+          </div>
           <div className="buttonContact">
             <Button
               color="primary"
