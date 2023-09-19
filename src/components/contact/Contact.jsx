@@ -61,7 +61,7 @@ export default function Contact() {
       script.defer = true;
       script.onload = () => {
         window.turnstile.render(".cf-turnstile", {
-          sitekey: "0x4AAAAAAAJovD7gUgx3JvhGl9jTA_KQgnE",
+          sitekey: "0x4AAAAAAAJovBJuxtfEvcgQ",
           theme: "dark",
           callback: _turnstileCb,
           mode: "managed",
