@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import MyCV from "../../../Assets/WaleedCV.pdf";
 export default function Widescreen() {
   return (
     <div className="wideAppbarParent">
@@ -41,14 +42,16 @@ export default function Widescreen() {
           whileHover={{ scale: 1.3 }}
           transition={{ duration: 0.2, ease: "easeInOut" }}
         >
-          <Link
-            to="resume"
-            smooth={true}
+          <a
+            href={MyCV}
+            download="your-cv.pdf"
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "space-around",
               width: "100px",
+              textDecoration: "none",
+              color: "inherit",
             }}
           >
             Resume
@@ -57,7 +60,7 @@ export default function Widescreen() {
                 marginTop: "5px",
               }}
             />
-          </Link>
+          </a>
         </motion.div>
       </div>
     </div>
