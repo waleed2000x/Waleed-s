@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <Element name="projects" className="projectParent">
       <div className="projectTitle" data-aos="zoom-in" data-aos-duration="1000">
-        <p>Here we have some projects</p>
+        <p>My Projects</p>
       </div>
       <div className="projects">
         <Project

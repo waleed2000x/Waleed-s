@@ -8,11 +8,12 @@ export default function Footer() {
     <div className="footerParent">
       <motion.h1
         whileHover={{ scale: 1.1 }}
+        style={{ marginLeft: "20px" }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
       >
-        <span className="left-animation">&lt;</span>
+        <span style={{ color: "rgb(68, 11, 254)" }}>&lt;</span>
         Waleed Ahmed
-        <span className="right-animation">&nbsp;/&gt;&nbsp;</span>
+        <span style={{ color: "rgb(68, 11, 254)" }}>&nbsp;/&gt;&nbsp;</span>
       </motion.h1>
       <div className="socialIcons">
         <motion.div
