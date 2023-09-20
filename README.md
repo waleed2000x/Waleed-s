@@ -44,7 +44,7 @@ Repository: [GitHub](https://github.com/waleed2000x/Waleed)
 - Styled-Components
 - Animate on Scroll
 - Framer Motion
-- Turnstile verification ( Cloudflare )
+- Turnstile | Cloudflare
 - Responsive design with Flexbox/Grid
 - API integration for dynamic content
 - Version control with Git and GitHub
