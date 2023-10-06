@@ -20,7 +20,7 @@ export default function Projects() {
         <Project
           title="Property Port"
           Image={PropertyPort}
-          Link="https://propertyport.netlify.app/"
+          Link="https://propertyport.vercel.app/"
           Fade="fade-left"
         />
       </div>
