@@ -4,7 +4,7 @@ import Html from "./Images/html.svg";
 import CSS from "./Images/CSS.png";
 import JS from "./Images/JS.avif";
 import ReactLottie from "../Home/HomeLotties/ReactLottie";
-import Next from "./Images/next.svg";
+import Next from "./Images/next-js.svg";
 import NextAuth from "./Images/nextauth.png";
 import Mongo from "./Images/mongo.svg";
 import Express from "./Images/express.svg";
