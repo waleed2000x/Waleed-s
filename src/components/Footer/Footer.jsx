@@ -20,19 +20,25 @@ export default function Footer() {
           whileHover={{ scale: "1.1" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <InstagramIcon />
+          <a href="https://www.instagram.com/waleedahmed.x/" target="blank">
+            <InstagramIcon />
+          </a>
         </motion.div>
         <motion.div
           whileHover={{ scale: "1.1" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <LinkedInIcon />
+          <a href="https://www.linkedin.com/in/waleedahmedx" target="blank">
+            <LinkedInIcon />
+          </a>
         </motion.div>
         <motion.div
           whileHover={{ scale: "1.1" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <MailIcon />
+          <a href="mailto:waleedahmed2000x@gmail.com" target="blank">
+            <MailIcon />
+          </a>
         </motion.div>
       </div>
     </div>

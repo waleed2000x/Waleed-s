@@ -566,7 +566,10 @@
   width: 15%;
   justify-content: space-evenly;
 }
-.footerParent .socialIcons svg {
+.footerParent .socialIcons a {
+  color: white;
+}
+.footerParent .socialIcons a svg {
   font-size: 40px;
 }
 

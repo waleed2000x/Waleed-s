@@ -586,8 +586,11 @@
     display: flex;
     width: 15%;
     justify-content: space-evenly;
-    & svg {
-      font-size: 40px;
+    & a {
+      color: white;
+      & svg {
+        font-size: 40px;
+      }
     }
   }
 }

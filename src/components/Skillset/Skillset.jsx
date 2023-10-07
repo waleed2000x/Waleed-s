@@ -89,7 +89,6 @@ export default function Skillset() {
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border: "2px solid black",
                 }}
                 alt="JS"
               />
