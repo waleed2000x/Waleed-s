@@ -9,6 +9,9 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  // Scrollbar
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Parent Container */
