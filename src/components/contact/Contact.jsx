@@ -20,6 +20,21 @@ const StyledTextField = styled(TextField)`
     border-color: white;
   }
 `;
+const StyledTextFieldMessage = styled(TextField)`
+  .MuiOutlinedInput-root {
+    width: 100%;
+    min-height: 300px;
+    color: white;
+  }
+
+  .MuiInputLabel-root {
+    color: white;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: white;
+  }
+`;
 
 const ContactSchema = Yup.object({
   fullname: Yup.string().min(2).required("Name is a required field"),
@@ -143,7 +158,7 @@ export default function Contact() {
         </div>
         <div className="rightContact">
           <div className="centerMessages">
-            <StyledTextField
+            <StyledTextFieldMessage
               label="Message"
               placeholder="Message"
               multiline
