@@ -27,7 +27,7 @@ export default function Skillset() {
         <p>Skill Set</p>
       </div>
       <div className="slidersParent">
-        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>HTML</p>
             <div className="imageSkill">
@@ -36,7 +36,7 @@ export default function Skillset() {
           </div>
           <Slider color="warning" value={95} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>CSS</p>
             <div className="imageSkill">
@@ -45,7 +45,7 @@ export default function Skillset() {
           </div>
           <Slider color="info" value={85} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>JavaScript</p>
             <div className="imageSkill">
@@ -58,7 +58,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Bootstrap</p>
             <div className="imageSkill">
@@ -71,7 +71,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>React</p>
             <div className="imageSkill">
@@ -80,7 +80,7 @@ export default function Skillset() {
           </div>
           <Slider value={90} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Next</p>
             <div className="imageSkill">
@@ -109,7 +109,7 @@ export default function Skillset() {
           </div>
           <Slider color="success" value={90} valueLabelDisplay="auto" />
         </div>
-        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Express</p>
             <div className="imageSkill">
@@ -135,7 +135,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>NextAuth</p>
             <div className="imageSkill">
@@ -148,7 +148,7 @@ export default function Skillset() {
             valueLabelDisplay="auto"
           />
         </div>
-        <div className="sliders" data-aos="fade-right" data-aos-duration="1000">
+        <div className="sliders" data-aos="fade-left" data-aos-duration="1000">
           <div className="sliderTitle">
             <p>Material UI</p>
             <div className="imageSkill">
