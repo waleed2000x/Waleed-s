@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import CarMed from "./Images/CarMed.png";
-import VibeVault from "./Images/VibeVault.png";
+import Nexus from "./Images/Nexus.png";
 import PropertyPort from "./Images/PropertyPort.png";
 import Viventa from "./Images/Viventa.png";
 import Project from "./Project";
@@ -18,19 +18,19 @@ export default function Projects() {
           Fade="fade-right"
         />
         <Project
-          title="Property Port"
-          Image={PropertyPort}
-          Link="https://propertyport.vercel.app/"
-          Fade="fade-left"
+          title="The nexus"
+          Image={Nexus}
+          Link="https://www.thenexushotelapartments.com/"
+          Fade="fade-right"
         />
       </div>
 
       <div className="projects">
         <Project
-          title="Vibe Vault"
-          Image={VibeVault}
-          Link="https://vibevault.netlify.app/"
-          Fade="fade-right"
+          title="Property Port"
+          Image={PropertyPort}
+          Link="https://propertyport.vercel.app/"
+          Fade="fade-left"
         />
         <Project
           title="Viventa"

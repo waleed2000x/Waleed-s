@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" },
+    {
+      "source": "/(.*)",
+      "destination": "/src/components/Not Found/NotFound.jsx"
+    }
+  ]
+}
