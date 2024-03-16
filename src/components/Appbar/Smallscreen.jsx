@@ -2,6 +2,8 @@ import { Button } from "@mui/material";
 import TableRowsRoundedIcon from "@mui/icons-material/TableRowsRounded";
 import { useState } from "react";
 import { Link } from "react-scroll";
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import MyCV from "../../../Assets/WaleedCV.pdf";
 export default function Smallscreen() {
   const [showBar, setShowBar] = useState(false);
   return (
@@ -39,7 +41,25 @@ export default function Smallscreen() {
           >
             Projects
           </Link>
-          <Link>Resume</Link>
+          <a
+            href={MyCV}
+            download="your-cv.pdf"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-around",
+              width: "100px",
+              textDecoration: "none",
+              color: "inherit",
+            }}
+          >
+            Resume
+            <DownloadRoundedIcon
+              style={{
+                marginTop: "5px",
+              }}
+            />
+          </a>
           <Link
             to="contact"
             duration={1000}
